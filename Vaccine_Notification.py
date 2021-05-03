@@ -39,7 +39,7 @@ def execute():
         msg18 = ''
         for centre in centres:
             try:
-#                print(centre['name'])
+                print(centre['name'])
                 sessions = centre['sessions']
                 if len(sessions) > 0:
                     for session in sessions:
@@ -53,7 +53,7 @@ def execute():
                             else:
                                 msg18 = msg18 + centre['name'] + " for age 18 to 44\n"
                                 msg18 = msg18 + str(date) +   " Capacity: " + str(capacity) + "\n\n"
-#                        print("Date: ", date, "Capacity: ", capacity, "Age: ", age)
+                        print("Date: ", date, "Capacity: ", capacity, "Age: ", age)
             except Exception as error:
                 print(error)
 
@@ -93,7 +93,7 @@ Subject: Vaccine Availability Notification"""
         if msg18 == 1:
             msg = msg + msg18
         logs.config(text=msg)
-        time.sleep(30)
+        time.sleep(15)
         if stop:
             break
 
