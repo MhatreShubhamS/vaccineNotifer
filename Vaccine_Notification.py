@@ -77,7 +77,7 @@ Subject: Vaccine Availability Notification"""
             if is18 == 1:
                 body = body + "\n\n" + msg18
             try:
-                if (msg18 != '' and is18 == 1) or (msg45 != '' or is45 == 1):
+                if (msg18 != '' and is18 == 1) or (msg45 != '' and is45 == 1):
                     server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
                     server.ehlo()
                     server.login(gmail_user, gmail_password)
