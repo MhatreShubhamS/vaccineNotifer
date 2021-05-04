@@ -1,5 +1,7 @@
 # vaccineNotifer
 
+**We have came up with a better solution, this will be depricated soon.**
+
 Get notification when vaccine is available in your area
 
 Download and run the .exe file if you dont have any coding knowledge or not interested in setting up python environment.
